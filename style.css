@@ -1,0 +1,368 @@
+/* 全体 */
+
+*{
+  font-family: "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ Pro W6", "Roboto", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin: 0px;
+}
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* Navigation */
+header{
+  margin: 0px;
+  width: 100%;
+  padding: 0px 0px;
+  background-color: brown;
+}
+
+.global_nav{
+  width: 100%;
+  height: auto;
+  margin: 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  position: fixed; 
+  background-color: brown;
+
+}
+
+#title{
+  width: 30%;
+  padding: 10px 30px;
+  float: left;
+  margin: 0px;
+  color: white;
+}
+
+#title a{
+  color: white;
+  text-decoration: none;
+}
+
+#global_navigation{
+  width: 50%;
+  float: right;
+  padding: 0px 30px;
+  margin: 0px;
+}
+
+ul.nav{
+  margin: 0px;
+  padding: 0 30px 0px;
+  list-style: none;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  /*outline: 1px solid green;*/
+}
+
+.nav li{
+  /*outline: 1px solid blue;*/
+}
+
+.nav li a{
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.nav li a:link{
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+}
+.nav li a:visited{
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+}
+.nav li a:hover{
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  background-color: white;
+  color: brown;
+  transition: 0.4s;
+}
+
+
+/* Top Message */
+.main_contents{
+  width: auto;
+  height: 550px;
+  background: url('images/top_BG.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  font-size: 140%;
+  padding: 75px 100px 75px 100px;
+  margin: 0px;
+}
+
+.top_message{
+  text-align: center;
+}
+
+.top_title_en{
+  text-align: center;
+}
+
+.top_title_jp{
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.top_message {
+  padding: 0px 0px;
+  
+}
+/* about -64, 64*/
+.about{
+  
+  margin-top: -64px;
+  padding-top: 64px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #aaaaaa;
+  color: #ffffff;
+}
+.about_photo{
+  width: 25%;
+  padding: 0px 0px 0px 0px;
+  float: left;
+}
+.about_photo img{
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.about_description{
+  width: 75%;
+  padding: 0px 0px 0px 0px;
+  float: right;
+}
+
+.about_title{
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.about_introduction{
+  text-align: left;
+  padding: 0px 0px;
+  font-size: 120%;
+}
+
+
+
+/* Works */
+
+.works{
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: -60px;
+  padding-top: 110px;
+
+}
+
+.works_list{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 120%;
+}
+
+.works_list p a:link{
+  color: brown;
+}
+.works_list p a:visited{
+  color: brown;
+}
+
+.works_contents{
+  margin-top: -58px;
+  padding-top: 78px;
+}
+
+.works_description_L{
+  width: 60%;
+  padding: 0px 0px 30px 0px;
+  float: left;
+
+}
+.works_description_R{
+  width: 60%;
+  padding: 0px 0px 30px 0px;
+  float: right;
+
+}
+
+.works_description_L h1{
+  color: brown;
+  padding-bottom: 10px;
+}
+
+.works_description_R h1{
+  color: brown;
+  padding-bottom: 10px;
+}
+
+.works_description_L h2{
+  color: brown;
+  padding-bottom: 10px;
+}
+
+.works_description_R h2{
+  color: brown;
+  padding-bottom: 10px;
+}
+
+.works_description_L p{
+  white-space: normal;
+  padding-right: 5%;
+  font-size:120%;
+}
+
+.works_description_R p{
+  white-space: normal;
+  padding-right: 5%;
+  font-size:120%;
+}
+
+.works_description_L hr{
+  margin: 10px 0;
+  
+}
+
+.works_description_R hr{
+  margin: 10px 0;
+  
+}
+
+
+.works_image_L{
+  width: 40%;
+  float: left;
+  padding: 0px 0px 30px 0px;
+  margin-right: auto;
+  text-align:left;
+  background-color: white;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.works_image_L img{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  margin:10px;
+}
+
+.works_image_R{
+  width: 40%;
+  float: right; 
+  padding: 0px 0px 30px 0px;
+
+  text-align: left;
+  background-color: white;
+}
+
+.works_image_R img{
+  text-align: right;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  margin:10px;
+}
+
+
+
+.works_others_title{
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+
+.works_others_title h1{
+  color: brown;
+  padding-bottom: 10px;
+}
+
+.works_others_title h2{
+  color: brown;
+  padding-bottom: 10px;
+}
+
+.works_others_title p{
+  white-space: normal;
+  font-size:120%;
+}
+
+.works_others_photo{
+  text-align: center;
+  padding-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.works_others_photo img{
+  text-align: right;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.works_others_photo figure{
+  width: 30%;
+  float: left;
+}
+
+ 
+.works_title{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.clear { clear:both; }
+.clear hr { display:none; }
+
+/* Footer */
+
+footer{
+  margin: 0 auto;
+  padding: 0px 0px;
+  width: 100%;
+  height: auto;
+  background-color: brown;
+  color: white;
+}
+.copyright{
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Other */
+/*
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  box-shadow: inset 0 0 5px rgba(0,0,0, .1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 0px;
+  box-shadow:0 0 0 1px rgba(0,0,0, .3);
+}
+*/
