@@ -129,7 +129,7 @@ ul.nav{
 /* about -64, 64*/
 .about{
   width: 100%;
-  margin-top: -64px;
+  margin-top: -84px;
   padding-top: 64px;
   padding-bottom: 50px;
   padding-left: 0px;
@@ -173,7 +173,7 @@ ul.nav{
   padding-left: 5%;
   padding-right: 5%;
   margin-top: -60px;
-  padding-top: 110px;
+  padding-top: 60px;
 
 }
 
@@ -181,6 +181,7 @@ ul.nav{
   text-align: center;
   padding-bottom: 20px;
   font-size: 120%;
+  font-weight: bold;
 }
 
 .works_list p a:link{
@@ -229,6 +230,14 @@ ul.nav{
 .works_description_R h2{
   color: brown;
   padding-bottom: 10px;
+  white-space: normal;
+}
+
+.works_description_L h3{
+  white-space: normal;
+}
+
+.works_description_R h3{
   white-space: normal;
 }
 
