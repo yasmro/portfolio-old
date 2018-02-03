@@ -157,12 +157,21 @@ ul.nav{
   padding-top: 0px;
   padding-bottom: 20px;
 }
+.about_title a{
+  color: white;
+}
+.about_title a:visited{
+  color: white;
+}
+
 .about_introduction{
   text-align: left;
   white-space: normal;
   padding-right: 50px;
   font-size: 120%;
 }
+
+
 
 
 
@@ -197,14 +206,14 @@ ul.nav{
 }
 
 .works_description_L{
-  width: 60%;
-  padding: 0px 0px 30px 0px;
+  width: 100%;
+  padding: 0px 0px 60px 0px;
   float: left;
 
 }
 .works_description_R{
-  width: 60%;
-  padding: 0px 0px 30px 0px;
+  width: 100%;
+  padding: 0px 0px 60px 0px;
   float: right;
 
 }
@@ -213,12 +222,14 @@ ul.nav{
   color: brown;
   padding-bottom: 10px;
   white-space: normal;
+  text-align: center;
 }
 
 .works_description_R h1{
   color: brown;
   padding-bottom: 10px;
   white-space: normal;
+  text-align: center;
 }
 
 .works_description_L h2{
@@ -235,22 +246,24 @@ ul.nav{
 
 .works_description_L h3{
   white-space: normal;
+  text-align: center;
 }
 
 .works_description_R h3{
   white-space: normal;
+  text-align: center;
 }
 
 .works_description_L p{
   white-space: normal;
   margin-right: 0%;
-  font-size:120%;
+  font-size:100%;
 }
 
 .works_description_R p{
   white-space: normal;
   margin-right: 0%;
-  font-size:120%;
+  font-size:100%;
 }
 
 .works_description_L hr{
@@ -265,7 +278,7 @@ ul.nav{
 .works_image_L{
   width: 40%;
   float: left;
-  padding: 0px 0px 30px 0px;
+  padding: 0px 30px 10px 0px;
   
   text-align:left;
   background-color: white;
@@ -281,13 +294,12 @@ ul.nav{
 .works_image_R{
   width: 40%;
   float: right; 
-  padding: 0px 0px 30px 0px;
+  padding: 0px 0px 10px 30px;
   text-align: left;
   background-color: white;
 }
 
 .works_image_R img{
-  text-align: right;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   margin:10px;
 }
