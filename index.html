@@ -1,4 +1,4 @@
-<!-- Version 9 -->
+<!-- Version 11 -->
 <!doctype html>
 <html>
 <head>
@@ -13,340 +13,266 @@
 	<meta name="viewport" content="width=980, minimum-scale=0.1">
 	<title>Yasmro's Portfolio</title>
 
-	<link href="style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet"> 
 	<link href="lity.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="simplebox.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
-	<link rel="stylesheet" href="imagehover.min.css">
 
 	<script type="text/javascript" src="./js/vivus.min.js"></script>
 	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="./js/lity.js"></script>
 	<script type="text/javascript" src="./js/simplebox.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-
-			/*
-			* Plugin intialization
-			*/
-			$('#pagepiling').pagepiling({
-				menu: '#menu',
-				anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7' ],
-				sectionsColor: ['white', ,'white','white','white', 'white', 'white'],
-				navigation: {
-					'position': 'right',
-					'tooltips': ['Page 1', 'Page 2', 'Page 3']
-				},
-				afterRender: function(){
-					$('#pp-nav').addClass('custom');
-				},
-				afterLoad: function(anchorLink, index){
-					if(index>1){
-						$('#pp-nav').removeClass('custom');
-					}else{
-						$('#pp-nav').addClass('custom');
-					}
-				}
-			});
-
-
-			/*
-			* Internal use of the demo website
-			*/
-			$('#showExamples').click(function(e){
-				e.stopPropagation();
-				e.preventDefault();
-				$('#examplesList').toggle();
-			});
-
-			$('html').click(function(){
-				$('#examplesList').hide();
-			});
-		});
-	</script>
-
-    <style>
-
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
-	.section{
-		background-size: cover;
-	}
-
-	/* Defining each section background and styles
-	* --------------------------------------- */
-	#section1{
-		background-image: url(./images/top_BG.jpg);
-	}
-	#section2{
-		background-color: rgb(100,100,100);
-	}
-	#section3{
-		background-color: rgb(120,120,120);
-	}
-
-
-
-
-
-
-
-
-
-
-
-    </style>
 </head>
+
+<script>
+	$(document).ready(function () {
+	    hsize = $(window).height();
+	    $("home").css("height", hsize + "px");
+	});
+	$(window).resize(function () {
+	    hsize = $(window).height();
+	    $("home").css("height", hsize + "px");
+	});
+</script>
+
 
 <body>
 
-	<ul id="menu">
-		<li data-menuanchor="section1" class="active"><a href="#section1">home</a></li>
-		<li data-menuanchor="section2"><a href="#section2">about</a></li>
-		<li data-menuanchor="section3"><a href="#section3">works</a></li>
-	</ul>
+    <!-- Header -->
+    <header>
+    	<div class="global_nav" id="navigation">
+    		<h1 id = "title"><a href="#"> Yasmro's portfolio site</a></h1> 
+    		<ul class="nav">
+    			<li><a href="#">home</a></li>
+    			<li><a href="#about">about</a></li>
+    			<!-- <li><a href="#">reason</a></li> -->
+    			<li><a href="#works">works</a></li>
+    		</ul>
+    	</div>
+    	<!-- <hr class = "header_line"> -->
+    </header>
 
-		<div id="pagepiling">
+    <!-- Top Message -->
+    <div class = "main_contents">
 
-		    <div class="section" id="section1">
-		    	    <!-- Top Message -->
-	   			<div class = "main_contents">
+    	<div class = "top_title_en">
+    		<img src="./images/top_message2.png" width="90%">
+    	</div>
 
-			    	<div class = "top_title_en">
-			    		<img src="./images/top_message2.png" width="90%">
-			    	</div>
+    	<div class = "top_title_jp">
+    		<h1>デザインは人々を幸せにする魔法である</h1>
+    	</div>
 
-			    	<div class = "top_title_jp">
-			    		<h1>デザインは人々を幸せにする魔法である</h1>
-			    	</div>
-
-			    	<p class = "top_message">
-			    		デザインとは，問題の本質を捉え，その解決に向けて見た目を設計し，
-			    		それに合わせて実装することで問題解決を図ることである．
-			    		つまりデザインは見た目を設計するだけでなく，モノづくりの全てのプロセスで関わり，かつ
-			    		モノづくりの上で関わるすべての人（クリエイター，マーケター，ユーザなど）に影響を与える．
-			    		何かを変えられるチカラを持ち，それが多くの人を幸せにする魔法，それがデザインである．</p>
+    	<p class = "top_message">
+    		デザインとは，問題の本質を捉え，その解決に向けて見た目を設計し，
+    		それに合わせて実装することで問題解決を図ることである．
+    		つまりデザインは見た目を設計するだけでなく，モノづくりの全てのプロセスで関わり，かつ
+    		モノづくりの上で関わるすべての人（クリエイター，マーケター，ユーザなど）に影響を与える．
+    		何かを変えられるチカラを持ち，それが多くの人を幸せにする魔法，それがデザインである．</p>
 
 
-			    	<!--
-				    <div class = "contents">
-				    	<h2>Out-of-the-box Thinking</h2>
-				    	<p>使ってもらえるモノを作るにはどんなことが必要なのか？それは「ターゲット」，「その抱える問題」，「問題に対する解決策」の3つがはっきりしていることである．
-				    	デザインとは，問題の本質を捉え，その解決に向けて設計して，見た目を作っていくことで問題解決を図る必要がある．</p>
-				    </div>
+    	<!--
+	    <div class = "contents">
+	    	<h2>Out-of-the-box Thinking</h2>
+	    	<p>使ってもらえるモノを作るにはどんなことが必要なのか？それは「ターゲット」，「その抱える問題」，「問題に対する解決策」の3つがはっきりしていることである．
+	    	デザインとは，問題の本質を捉え，その解決に向けて設計して，見た目を作っていくことで問題解決を図る必要がある．</p>
+	    </div>
 
-				    <div class = "contents">
-				    	<h2>問題の本質を掘り下げる</h2>
-				    	<p>対象となるターゲットに対して抱えている「問題」は何なのか，どういう背景やニーズがあるのか，それがなぜなのか，これらを常に感じ取り，考える．繰り返すことで，問題の本質を明確にする．</p>
-				    </div>
+	    <div class = "contents">
+	    	<h2>問題の本質を掘り下げる</h2>
+	    	<p>対象となるターゲットに対して抱えている「問題」は何なのか，どういう背景やニーズがあるのか，それがなぜなのか，これらを常に感じ取り，考える．繰り返すことで，問題の本質を明確にする．</p>
+	    </div>
 
-				    <div class = "contents">
-				    	<h2>作るモノの魅力を考える</h2>
-				    	<p>どんなにすごいモノやサービスを生み出したとしても，その魅力，つまりそのモノがもつ「らしさ」がユーザに伝わらない以上，そのモノやサービスの価値は無い．問題解決のために必要な，モノの「魅力」を考え，カタチになるモノづくりをすることが重要である．</p>
-				    </div>
+	    <div class = "contents">
+	    	<h2>作るモノの魅力を考える</h2>
+	    	<p>どんなにすごいモノやサービスを生み出したとしても，その魅力，つまりそのモノがもつ「らしさ」がユーザに伝わらない以上，そのモノやサービスの価値は無い．問題解決のために必要な，モノの「魅力」を考え，カタチになるモノづくりをすることが重要である．</p>
+	    </div>
+	-->
+	</div>
 
-				-->
-				</div>
-		   	</div>
 
-		    <div class="section" id="section2">
-				<div class = "about_photo" align="center">
-					<img src="images/about_myself.jpg" width="80%">
-				</div>
-
-				<div class = "about_description">
-					<div class = "about_title">
-						<h1>大野　優</h1>
-						<h2>Yu Ohno (a.k.a. Yasmro)</h2>
-						Contact: <a href="mailto:kantillo0683@gmail.com" class="contact">kantillo0683@gmail.com</a><br>
-					</div>
-
-					<div class = "about_introduction">
-					<p>
+	<div class = "about" id = "about" align="center">
+		<div class = "about_photo" align="center">
+			<img src="images/about_myself.jpg" width="80%">
+		</div>	
+		<div class = "about_description">
+			<div class = "about_title">
+				<h1>大野　優</h1>
+				<h2>Yu Ohno (a.k.a. Yasmro)</h2>
+				Contact: <a href="mailto:kantillo0683@gmail.com" class="contact">kantillo0683@gmail.com</a><br>
+			</div>
+			<div class = "about_introduction">
+				<p>
 					1996/12/26生まれ，AB型，奈良県出身<br><br>奈良高専システム創成工学専攻情報システムコース1年所属<br>
 					フォント好きがきっかけでデザインに興味を持つようになりました．最初は，見た目こそデザインの全てと思っていましたが，システム設計の講義でデザインに対する印象を大きく変えました．それを機にデザインは多くの人を幸せにする魔法であると認識するようになり，さらにデザインに対する魅力を抱くようになりました．<br>趣味・特技は書道（10年目，過去20回以上コンクールで受賞経験あり）・音楽（Classic, Jazz, Orchestra, Baritone Sax経験あり）・海外旅行（写真はSingaporeのClarke Quay）・ほのぼのアニメを見ることです．<br><br>
 				デザインスキル：Photoshop, Illustrator, Typography, 配色理論<br>
 				コーディングスキル：HTML, CSS, Javascript, Java, C, C#, Android(Xamarin)など
-					</p>
-					</div>
-				</div>	
-		    </div>
+				</p>
 
-		    <div class="section" id="section3">
-				<div class = "works_main_title">
-					<h1>Works</h1>
+			</div>
+
+		</div>
+		<div class="clear"><hr /></div>
+	</div>
+
+	<div class = "works" id = "works">
+		<div class = "works_title">
+			<h1>Works</h1>
+		</div>
+
+		<!-- Works List (each contents) -->
+		<div class = "works_list">
+			<p>
+				<a href = "#work_smartattendance">Smart Attendance System</a>／
+				<a href = "#work_japanese">外国人向け日本語学習コンテンツ</a>／<br>
+				<a href = "#work_barrier">Barrier Detector</a>／
+				<a href = "#work_calligraphy">Arts</a>
+			</p>
+		</div>
+
+		<div class = "works_contents" id = "work_smartattendance">
+			<div class = "works_description_L">
+
+
+				<div class = "works_title_R" >	
+				<h1>Smart Attendace System</h1>
+				<h3>海外インターンシップ@Singapore (2017/08/02〜2017/08/29)<br>
+				Tools: Xamarin/Visual Studio C#/Apache Server/phpMyAdmin/MySQL</h3>
+				<hr width="100%" class = "works_line" noshade size="2">
+				<div class = "works_image_R" >	
+				<img src="images/SAS1.png" width="100%" class = "slb">
+		
+				</div>
+					<h2>QRコードによる出席登録で教員の負担を和らげ，学生のQRコードの悪用を阻止する</h2>
+				<p>
+					シンガポールの大学へインターン留学で受けた研修にて開発したQRコードによる出席登録＆管理アプリ「Smart Attendance System」．私は研究室の学生が開発したWeb APIを応用して，Android端末によるQRコードを用いた講義の出席登録・一覧表の閲覧を可能にしました．注目点は，学生のQRコードの悪用の防止です．本アプリを利用するにあたって，ある学生がQRコードを悪用して友人に送信してしまう問題点が考えられます．これを防ぐために，研究室の学生とディスカッションし合い，時間ごとに動的にQRコードを生成する解決策を提案し・実装することができました．本インターンシップを通して，ターゲットがサービスやコンテンツを使う上で考えられる問題の発見方法とその解決方法を学びました．<br>
+				</p>
+				<a href="images/SAS_PF.pdf">最終報告会でのプレゼン資料はこちら<br>（スライドのデザインも手がけてます）</a>
 				</div>
 
-				<!-- Works List (each contents) -->
-				<!--
-				<div class = "works_list">
-					<p>
-						<a href = "#section4">Smart Attendance System</a>／
-						<a href = "#section5">外国人向け日本語学習コンテンツ</a>／<br>
-						<a href = "#section6">Barrier Detection</a>／<br>
-						<a href = "#section7">Arts : Calligraphy & Typography</a>
-					</p>
-				</div>
-				-->
-				<div class = "works_photo_list">
-
-					<figure class="sample2">
- 						<img src="images/SAS1.png" width="100%">
- 							<div class="mask">
-								<div class="caption">
-									<strong>Smart Attendance System</strong>
-  									<p>QRコードによる出席登録で教員の負担を和らげ，学生のQRコードの悪用を阻止する</p>
-								</div>
-							</div>
-						<a href = "#section4"></a>
-
-
-					</figure>
-
-					<figure class="sample2">
- 						<img src="images/Japanese_Title.png" width="100%">
- 							<div class="mask">
-								<div class="caption">
-									<strong>Let's Learn Japanese</strong>
-  									<p>難しい日本語を少しでも楽しく学んで欲しい</p>
-								</div>
-							</div>
-						<a href = "#section5"></a>
-					</figure>
-					<div class="clear"><hr /></div>
-
-					<figure class="sample2">
- 						<img src="images/Barrier1.png" width="100%">
- 							<div class="mask">
-								<div class="caption">
-									<strong>Barrier Detector</strong>
-  									<p>視覚障がい者の歩行を<br>より安全に</p>
-								</div>
-							</div>
-						<a href = "#section6"></a>
-					</figure>
-
-					<figure class="sample2" >
- 						<img src="images/Shodo.png" width="100%">
- 							<div class="mask">
-								<div class="caption">
-									<strong>Arts</strong>
-  									<p>Calligraphy <br>& <br>Typography Arts</p>
-								</div>
-							</div>
-						<a href = "#section7"></a>
-					</figure>
+				<div class="clear"><hr /></div>
+				<div class="work_prev_next">
+					<p><a href = "#work_japanese">外国人向け日本語学習コンテンツへ</a> </p>
 				</div>
 
-		    </div>
 
-		    <div class="section" id="section4">
-		    	<div class = "works_contents">
 
-					<div class = "works_title" >	
-						<h1>Smart Attendace System</h1>
-						<h3>海外インターンシップ@Singapore (2017/08/02〜2017/08/29)<br>
-						Tools: Xamarin/Visual Studio C#/Apache Server/phpMyAdmin/MySQL</h3>
-					</div>
+			</div>
+	
+		</div>
 
-					<div class = "works_image" >	
-						<img src="images/SAS1.png" width="30%" >
-					</div>
+		<div class="clear"><hr /></div>
 
-					<div class = "works_description">
-						<h2>QRコードによる出席登録で教員の負担を和らげ，学生のQRコードの悪用を阻止する</h2>
-						<p>
-							シンガポールの大学へインターン留学で受けた研修にて開発したQRコードによる出席登録＆管理アプリ「Smart Attendance System」．私は研究室の学生が開発したWeb APIを応用して，Android端末によるQRコードを用いた講義の出席登録・一覧表の閲覧を可能にしました．注目点は，学生のQRコードの悪用の防止です．本アプリを利用するにあたって，ある学生がQRコードを悪用して友人に送信してしまう問題点が考えられます．これを防ぐために，研究室の学生とディスカッションし合い，時間ごとに動的にQRコードを生成する解決策を提案し・実装することができました．本インターンシップを通して，ターゲットがサービスやコンテンツを使う上で考えられる問題の発見方法とその解決方法を学びました．<br>
-						</p>
-						<a href="images/SAS_PF.pdf">最終報告会でのプレゼン資料はこちら（スライドのデザインも手がけてます）</a>
-					</div>
-				</div>
+
+		<div class = "works_contents" id = "work_japanese">
+			<div class = "works_description_L" >
+				<div class = "works_title_R" >
+				<h1>外国人向け日本語学習コンテンツ<br>Let's Learn Japanese -にほんごをまなぼう-</h1>
+				<h3>国内インターンシップ (2017/09/04〜2017/09/15)<br>
+				Tools: HTML/CSS/Javascript/Illustrator/Photoshop</h3>
+				<hr width="100%" class = "works_line" noshade size="2">
+				
+
+				<div class = "works_image_R">
+				<img src="images/Japanese_Title.png" width="100%" class = "slb"><br>
+				<!--<img src="images/Japanese1.png" width="100%" class = "slb"> -->
+				</div> 
+				<h2>難しい日本語を少しでも楽しく学んで欲しい</h2>
+				<p>
+					外国人を対象とし，日本語を楽しく学ぶことができるコンテンツ．シンガポールのインターン留学で交流した学生に，日本の印象について聞いてみたところ，日本の芸術（サブカルチャーや日本の景色・着物などの伝統工芸）は魅力的で好きだけど，日本の言葉を理解するのが難しい，という答えが多かったです．これを機に，外国人向けに難しい日本語を楽しく習得してもらえるコンテンツの作成を行いました．本コンテンツでは日本語の基礎である「ひらがな」を学べる3つの機能：(1)ひらがなの音声を聞いてもらう機能，(2)日常生活で使う単語をクイズで学んでもらう機能，(3)ひらがなを実際に書いて学んでもらう機能を実装しました．
+					コンテンツUIについては，ロゴや見出しのフォントをGaramond調にしたり，背景を紋様柄に設定することで，日本語の「清楚な印象」を外国人に伝えられると思います．
 					
-					
-		    </div>
-
-		    <div class="section" id="section5">
-		    	<div class = "works_contents">
-
-					<div class = "works_title" >	
-						<h1>外国人向け日本語学習コンテンツ<br>Let's Learn Japanese -にほんごをまなぼう-</h1>
-					<h3>国内インターンシップ (2017/09/04〜2017/09/15)<br>
-					Tools: HTML/CSS/Javascript/Illustrator/Photoshop</h3>
-					</div>
-
-					<div class = "works_image" >	
-						<img src="images/Japanese_Title.png" width="30%" ><br>
-						<!-- <img src="images/Japanese1.png" width="30%" > -->
-					</div> 
-
-					<div class = "works_description">
-
-						<h2>難しい日本語を少しでも楽しく学んで欲しい</h2>
-						<p>
-							外国人を対象とし，日本語を楽しく学ぶことができるコンテンツ．シンガポールのインターン留学で交流した学生に，日本の印象について聞いてみたところ，日本の芸術（サブカルチャーや日本の景色・着物などの伝統工芸）は魅力的で好きだけど，日本の言葉を理解するのが難しい，という答えが多かったです．これを機に，外国人向けに難しい日本語を楽しく習得してもらえるコンテンツの作成を行いました．本コンテンツでは日本語の基礎である「ひらがな」を学べる3つの機能：(1)ひらがなの音声を聞いてもらう機能，(2)日常生活で使う単語をクイズで学んでもらう機能，(3)ひらがなを実際に書いて学んでもらう機能を実装しました．
-							コンテンツUIについては，ロゴや見出しのフォントをGaramond調にしたり，背景を紋様柄に設定することで，日本語の「清楚な印象」を外国人に伝えられると思います．
-						</p>
-						<a href="learnJapanese2_0/index.html">コンテンツページはこちら</a>
-					</div>
+				</p>
+				<a href="learnJapanese2_0/index.html">コンテンツページはこちら</a>
 				</div>
-		    </div>
-
-		    <div class="section" id="section6">
-		    	<div class = "works_contents">
-
-					<div class = "works_title" >	
-						<h1>Barrier Detector</h1>
-						<h3>グループワーク：講義課題 (2017/10〜2018/01)<br>
-						担当：プロジェクトリーダー，Arduinoコーディング（サブ），発表資料作成<br>
-						Tools: Arduino/Frizing/Tera Term/Keynote etc.</h3>
-					</div>
-
-					<div class = "works_image" >	
-						<img src="images/Barrier1.png" width="30%" >
-					</div>
-
-					<div class = "works_description">
-						<h2>視覚障がい者の歩行をより安全に</h2>
-
-						<p>
-						視覚障がい者の歩行時に起こる危険にまつわる問題を解決するために，視覚障がい者の安全な歩行を支援するグループプロジェクト．	障害物を検知するとリストバンド型レシーバの振動で歩行者に，近辺に障害物があることを通知するシステムです．主に視覚障がい者はエコロケーション（主に自ら発する音の反響を聞くことで目線の高さにある大きな障害物を認識）と白杖の2つで障害物があることを認識しているが，目線の高さにある小さな障害物の検出が困難であることや，白杖に引っかかると危ない障害物が存在する問題が生じてしまいます．これを解決するべく，超音波センサを用いたマイコンが搭載されたサングラスから超音波を発信・受信することで距離を測定し，それに応じてレシーバが振動する方法で，視覚障がい者に障害物があることを通知することができます．
-						</p>
-
-						<a href="images/Barrier_PF.pdf">最終報告会でのプレゼン資料はこちら（スライドのデザインも手がけてます）</a>
-					</div>
-				</div>
-		    </div>
-
-		    <div class="section" id="section7">
-				<div class = "works_contents" id = "work_calligraphy">
-					<div class = "works_title">
-						<h1>Arts -- Calligraphy, Typography & Photography </h1>
-					</div>
-					<div class = "works_description">
-						<p>10年間やって来た書道スキルを活かして，<br>日本の伝統文化の1つである書道の魅力を伝えたい，そんな思いから初めた書道デザインです</p> 
-					</div>					
-
-
-					<div class = "works_others_photo">
-							<img src="images/Shodo.png" width="20%" >
-							<img src="images/Shodo2.png" width="20%" >
-							<img src="images/BusinessCard.png" width="20%" >
-
-					</div>			
-
-					<div class = "works_others_photo">	
-						<img src="images/Typography.png" width="20%" >
-						<img src="images/Typography2.png" width="20%" >
-						<img src="images/Typography3.png" width="20%" >
-					</div>			
-				</div>
-		    
+			</div>
+			<div class="clear"><hr /></div>
+			<div class="work_prev_next">
+				<p> <a href = "#work_smartattendance">Smart Attendance System</a> / <a href = "#work_barrier">Barrier Detector</a> </p>
 			</div>
 		</div>
+
+		<div class="clear"><hr /></div>
+
+		<div class = "works_contents" id = "work_barrier">
+			<div class = "works_description_L">
+				<div class = "works_title_R" >
+				<h1>Barrier Detector</h1>
+				<h3>グループワーク：講義課題 (2017/10〜2018/01)<br>
+					担当：プロジェクトリーダー，Arduinoコーディング（サブ），発表資料作成<br>
+				Tools: Arduino/Frizing/Tera Term/Keynote etc.</h3>
+				<hr width="100%" class = "works_line" noshade size="2">
+				<div class = "works_image_R" >	
+				<img src="images/Barrier1.png" width="100%" class = "slb">
+				</div>
+				<h2>視覚障がい者の歩行をより安全に</h2>
+
+				<p>
+					視覚障がい者の歩行時に起こる危険にまつわる問題を解決するために，視覚障がい者の安全な歩行を支援するグループプロジェクト．	障害物を検知するとリストバンド型レシーバの振動で歩行者に，近辺に障害物があることを通知するシステムです．主に視覚障がい者はエコロケーション（主に自ら発する音の反響を聞くことで目線の高さにある大きな障害物を認識）と白杖の2つで障害物があることを認識しているが，目線の高さにある小さな障害物の検出が困難であることや，白杖に引っかかると危ない障害物が存在する問題が生じてしまいます．これを解決するべく，超音波センサを用いたマイコンが搭載されたサングラスから超音波を発信・受信することで距離を測定し，それに応じてレシーバが振動する方法で，視覚障がい者に障害物があることを通知することができます．
+				</p>
+
+				<a href="images/Barrier_PF.pdf">最終報告会でのプレゼン資料はこちら<br>（スライドのデザインも手がけてます）</a>
+				</div>
+			</div>
+			<div class="clear"><hr /></div>
+			<div class="work_prev_next">
+				<p> <a href = "#work_japanese">外国人向け日本語学習コンテンツ</a> / <a href = "#work_arts">Arts</a> </p>
+			</div>
+
+		</div>
+		<div class="clear"><hr /></div>
+
+
+
+		<div class = "works_contents" id = "work_arts">
+			<div class = "works_others_title">
+				<h1>Arts - Calligraphy , Typography & Photography</h1>
+				<div class="clear"><hr /></div>
+				<p>10年間やって来た書道スキルを活かして，<br>日本の伝統文化の1つである書道の魅力を伝えたい，そんな思いから初めた書道デザインです</p> 
+			</div>
+			<div class = "works_others_photo">
+				<img src="images/Shodo.png" width="30%" class = "slb">
+				<img src="images/Shodo2.png" width="30%" class = "slb">
+				<img src="images/BusinessCard.png" width="30%" class = "slb">
+			</div>
+			<div class="clear"><hr /></div>
+			<div class = "works_others_photo">
+				<img src="images/Typography.png" width="30%" class = "slb">
+				<img src="images/Typography2.png" width="30%" class = "slb">
+				<img src="images/Typography3.png" width="30%" class = "slb">
+			</div>	
+			<div class="clear"><hr /></div>
+			<div class="work_prev_next">
+				<p> <a href = "#work_barrier">Barrier Detector</a></p>
+			</div>		
+		</div>
+
+		<div class="clear"><hr /></div>
+		<!--
+		<div class = "works_contents" id = "work_typography">
+			<div class = "works_others_title">
+				<h1>Typography & Photography Arts</h1>
+				<p></p> 
+			</div>
+			<div class = "works_others_photo">	
+				<img src="images/Typography.png" width="30%" class = "slb">
+				<img src="images/Typography2.png" width="30%" class = "slb">
+				<img src="images/Typography3.png" width="30%" class = "slb">
+			</div>			
+		</div>
+		-->
+	</div>
+
+
+
+
+   
+	<script>
+		new Vivus('top', { duration: 50 , start: 'autostart', pathTimingFunction: Vivus.EASE_OUT,}, function(obj){
+			obj.el.classList.add('fill');
+		});
+	</script>
 
 	<script type="text/javascript">
 		$('.slb').simplebox({
@@ -354,8 +280,15 @@
 		});
 	</script>
 
+	
+        
 
-
+	<div class="clear"><hr /></div>
+	<footer>
+		<div class="copyright">
+		<p>Copyright: Yu Ohno 2018</p>
+		</div>
+	</footer>
 
 
 </body>
