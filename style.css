@@ -1,4 +1,4 @@
-/* Commit 9 */
+/* Commit 12 */
 /* 全体 */
 
 *{
@@ -210,7 +210,7 @@ ul.nav{
   padding-top: 78px;
 }
 
-.works_description_L{
+.works_description{
   width: 100%;
   padding: 0px 0px 60px 0px;
   float: left;
@@ -218,94 +218,53 @@ ul.nav{
 }
 
 
-.works_description_L h1{
+.works_description h1{
   color: brown;
   padding-bottom: 10px;
   white-space: normal;
   text-align: center;
 }
 
-.works_description_R h1{
-  color: brown;
-  padding-bottom: 10px;
-  white-space: normal;
-  text-align: center;
-}
 
-.works_description_L h2{
+
+.works_description h2{
   color: brown;
   padding-bottom: 10px;
   white-space: normal;
 }
 
-.works_description_R h2{
-  color: brown;
-  padding-bottom: 10px;
-  white-space: normal;
-}
 
-.works_description_L h3{
+
+.works_description h3{
   white-space: normal;
   text-align: center;
 }
 
-.works_description_R h3{
-  white-space: normal;
-  text-align: center;
-}
 
-.works_description_L p{
+
+.works_description p{
   white-space: normal;
   margin-right: 0%;
   font-size:100%;
 }
 
-.works_description_R p{
-  white-space: normal;
-  margin-right: 0%;
-  font-size:100%;
-}
 
-.works_description_L hr{
+
+.works_description hr{
   margin: 10px 0;
 }
 
-.works_description_R hr{
-  margin: 10px 0;
-}
 
-.works_description_L a{
+
+.works_description a{
   color: brown;
 }
 
-.works_description_R a{
+.works_description a:visited{
   color: brown;
 }
 
-.works_description_L a:visited{
-  color: brown;
-}
-
-.works_description_R a:visited{
-  color: brown;
-}
-
-.works_image_L{
-  width: 40%;
-  float: left;
-  padding: 0px 0px 0px 0px;
-  
-  text-align:left;
-  justify-content: center;
-  align-items: center;
-}
-
-.works_image_L img{
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  margin:10px;
-}
-
-.works_image_R{
+.works_image{
   width: 40%;
   float: right; 
   padding: 0px 0px 0px 0px;
@@ -313,7 +272,7 @@ ul.nav{
 
 }
 
-.works_image_R img{
+.works_image img{
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   margin:10px;
 }
