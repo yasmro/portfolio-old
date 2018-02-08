@@ -1,4 +1,4 @@
-/* Commit 12 */
+/* Commit 14 */
 /* 全体 */
 
 *{
@@ -103,7 +103,7 @@ ul.nav{
   height: 650px;
   background: url('images/top_BG.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: right;
   color: black;
   font-size: 120%;
   padding: 150px 0px 75px 0px;
