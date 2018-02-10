@@ -94,19 +94,21 @@ ul.nav{
   background-color: white;
   color: brown;
   transition: 0.4s;
+  
 }
+
 
 
 /* Top Message */
 .main_contents{
   width: 100%;
-  height: 650px;
+  height: 600px;
   background: url('images/top_BG.jpg');
   background-size: cover;
   background-position: right;
   color: black;
   font-size: 120%;
-  padding: 150px 0px 75px 0px;
+  padding: 150px 0px 0px 0px;
   margin: 0px;
 }
 
@@ -129,13 +131,12 @@ ul.nav{
 
 /* about -64, 64*/
 .about{
-    
   width:90%;
   padding-left: 5%;
   padding-right: 5%;
-  margin-top: -64px;
-  padding-top: 64px;
-  padding-bottom: 50px;
+  margin-top: 0px;
+  padding-top: 90px;
+  padding-bottom: 64px;
   background-color: #253762;
   color: #ffffff;
 }
@@ -186,9 +187,11 @@ ul.nav{
   padding-left: 5%;
   padding-right: 5%;
   margin-top: -60px;
-  padding-top: 60px;
-
-
+  padding-top: 80px;
+}
+.works_title{
+  text-align: center;
+  padding: 20px 0;
 }
 
 .works_list{
@@ -323,11 +326,7 @@ ul.nav{
   float: left;
 }
 
- 
-.works_title{
-  text-align: center;
-  padding: 20px 0;
-}
+
 
 .work_prev_next{
   text-align: right;
