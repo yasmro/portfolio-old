@@ -1,4 +1,4 @@
-<!-- Version 12 -->
+<!-- Version 20 -->
 <!doctype html>
 <html>
 <head>
@@ -15,6 +15,7 @@
 
 	<link href="style.css" rel="stylesheet"> 
 	<link href="lity.css" rel="stylesheet">
+	<link rel="stylesheet" href="jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="simplebox.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
@@ -23,19 +24,8 @@
 	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="./js/lity.js"></script>
 	<script type="text/javascript" src="./js/simplebox.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 </head>
-
-<script>
-	$(document).ready(function () {
-	    hsize = $(window).height();
-	    $("home").css("height", hsize + "px");
-	});
-	$(window).resize(function () {
-	    hsize = $(window).height();
-	    $("home").css("height", hsize + "px");
-	});
-</script>
-
 
 <body>
 
@@ -50,7 +40,6 @@
     			<li><a href="#works">works</a></li>
     		</ul>
     	</div>
-    	<!-- <hr class = "header_line"> -->
     </header>
 
     <!-- Top Message -->
@@ -104,11 +93,16 @@
 			</div>
 			<div class = "about_introduction">
 				<p>
-					1996/12/26生まれ，AB型，奈良県出身<br><br>奈良高専システム創成工学専攻情報システムコース1年所属<br>
-					フォント好きがきっかけでデザインに興味を持つようになりました．最初は，見た目こそデザインの全てと思っていましたが，システム設計の講義でデザインに対する印象を大きく変えました．それを機にデザインは多くの人を幸せにする魔法であると認識するようになり，さらにデザインに対する魅力を抱くようになりました．<br>趣味・特技は書道（10年目，過去20回以上コンクールで受賞経験あり）・音楽（Classic, Jazz, Orchestra, Baritone Sax経験あり）・海外旅行（写真はSingaporeのClarke Quay）・ほのぼのアニメを見ることです．<br><br>
-				デザインスキル：Photoshop, Illustrator, Typography, 配色理論<br>
-				コーディングスキル：HTML, CSS, Javascript, Java, C, C#, Android(Xamarin)など
+					1996/12/26生まれ，AB型，奈良県出身<br>奈良高専システム創成工学専攻情報システムコース1年所属<br><br>
+					フォント好きがきっかけでデザインに興味を持つようになりました．最初は，見た目こそデザインの全てと思っていましたが，システム設計に関するワークショップでの挫折を通して，デザインは作るモノの見た目だけでなく，モノを作る上でのターゲットに対するニーズや背景といった問題も考えるべきだと認識するようになりました．それを機にデザインはモノづくりの上で全ての工程・人々に影響を与え，幸せにできる魔法であるという印象を抱くようになり，さらにデザインに対する魅力を抱くようになりました．<br>趣味・特技は書道（10年目，過去20回以上コンクールで受賞経験あり）・音楽（Classic, Jazz, Orchestra, Baritone Sax経験あり）・海外旅行（写真はSingaporeのClarke Quay）・ほのぼのアニメを見ることです．<br><br>
 				</p>
+
+				<dl>      		
+                    <dt>デザインスキル：</dt>
+                        <dd>Photoshop, Illustrator, Typography, 配色理論, 画像加工</dd>
+                    <dt>コーディングスキル：</dt>
+                    	<dd>HTML, CSS, Javascript(主にJQuery), Java, C, C#, Android(Xamarin)など</dd>
+                </dl>
 
 			</div>
 
@@ -151,7 +145,7 @@
 
 				<div class="clear"><hr /></div>
 				<div class="work_prev_next">
-					<p><a href = "#work_japanese">外国人向け日本語学習コンテンツへ</a> </p>
+					<p><a href = "#work_japanese">外国人向け日本語学習コンテンツ</a> </p>
 				</div>
 			</div>
 		</div>
@@ -167,9 +161,19 @@
 				<hr width="100%" class = "works_line" noshade size="2">		
 
 				<div class = "works_image">
-				<img src="images/Japanese_Title.png" width="100%" class = "slb"><br>
-				<!--<img src="images/Japanese1.png" width="100%" class = "slb"> -->
-				</div> 
+					<img src="images/Japanese_Title.png" width="100%" class = "slb" /></li>
+				</div>
+
+				<!--
+				<div class = "works_image">
+					<ul class="bxslider">
+						<li><img src="images/Japanese_Title.png" width="100%" class = "slb" /></li>
+						<li><img src="images/Japanese1.png" width="100%" class = "slb" /></li>
+					</ul>
+				</div>
+				-->
+
+
 				<h2>難しい日本語を少しでも楽しく学んで欲しい</h2>
 				<p>
 					外国人を対象とし，日本語を楽しく学ぶことができるコンテンツ．シンガポールのインターン留学で交流した学生に，日本の印象について聞いてみたところ，日本の芸術（サブカルチャーや日本の景色・着物などの伝統工芸）は魅力的で好きだけど，日本の言葉を理解するのが難しい，という答えが多かったです．これを機に，外国人向けに難しい日本語を楽しく習得してもらえるコンテンツの作成を行いました．本コンテンツでは日本語の基礎である「ひらがな」を学べる3つの機能：(1)ひらがなの音声を聞いてもらう機能，(2)日常生活で使う単語をクイズで学んでもらう機能，(3)ひらがなを実際に書いて学んでもらう機能を実装しました．
@@ -203,7 +207,7 @@
 
 				<h2>視覚障がい者の歩行をより安全に</h2>
 				<p>
-					視覚障がい者の歩行時に起こる危険にまつわる問題を解決するために，視覚障がい者の安全な歩行を支援するグループプロジェクト．	障害物を検知するとリストバンド型レシーバの振動で歩行者に，近辺に障害物があることを通知するシステムです．主に視覚障がい者はエコロケーション（主に自ら発する音の反響を聞くことで目線の高さにある大きな障害物を認識）と白杖の2つで障害物があることを認識しているが，目線の高さにある小さな障害物の検出が困難であることや，白杖に引っかかると危ない障害物が存在する問題が生じてしまいます．これを解決するべく，超音波センサを用いたマイコンが搭載されたサングラスから超音波を発信・受信することで距離を測定し，それに応じてレシーバが振動する方法で，視覚障がい者に障害物があることを通知することができます．
+					視覚障がい者の歩行時に起こる危険にまつわる問題を解決するために，視覚障がい者の安全な歩行を支援するグループプロジェクト．	障害物を検知するとリストバンド型レシーバの振動で歩行者に，近辺に障害物があることを通知するシステムです．主に視覚障がい者はエコロケーション（主に自ら発する音の反響を聞くことで目線の高さにある大きな障害物を認識）と白杖の2つで障害物があることを認識していますが，目線の高さにある小さな障害物の検出が困難であることや，白杖に引っかかると危ない障害物が存在する問題が生じてしまいます．これを解決するべく，超音波センサを用いたマイコンが搭載されたサングラスから超音波を発信・受信することで距離を測定し，それに応じてレシーバが振動する方法で，視覚障がい者に障害物があることを通知することができます．
 				</p>
 
 				<a href="images/Barrier_PF.pdf">最終報告会でのプレゼン資料はこちら<br>（スライドのデザインも手がけてます）</a>
@@ -233,11 +237,19 @@
 			</div>
 			<div class="clear"><hr /></div>
 			<div class = "works_others_photo">
+				<img src="images/Shodo3.png" width="30%" class = "slb">
+				<img src="images/Shodo4.png" width="30%" class = "slb">
+				<img src="images/Flyer.png" width="30%" class = "slb">
+			</div>	
+			<div class="clear"><hr /></div>
+
+			<div class = "works_others_photo">
 				<img src="images/Typography.png" width="30%" class = "slb">
 				<img src="images/Typography2.png" width="30%" class = "slb">
 				<img src="images/Typography3.png" width="30%" class = "slb">
 			</div>	
 			<div class="clear"><hr /></div>
+
 			<div class="work_prev_next">
 				<p> <a href = "#work_barrier">Barrier Detector</a></p>
 			</div>		
@@ -274,6 +286,7 @@
 			fadeSpeed: 300
 		});
 	</script>
+
 
 	
         

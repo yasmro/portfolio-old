@@ -1,4 +1,4 @@
-/* Commit 14 */
+/* Commit 20 */
 /* 全体 */
 
 *{
@@ -12,6 +12,7 @@ body{
   white-space: nowrap;
   /* background-color: rgb(249,244,243);*/
 }
+
 
 /* Navigation */
 header{
@@ -153,6 +154,7 @@ ul.nav{
   width: 75%;
   padding: 0px 0px 0px 0px;
   float: right;
+  text-align: justify;
 }
 
 .about_title{
@@ -172,7 +174,8 @@ ul.nav{
 .about_introduction{
   text-align: left;
   white-space: normal;
-  padding-right: 50px;
+  text-align: justify;
+  padding-right: 0px;
   font-size: 120%;
 }
 
@@ -188,6 +191,7 @@ ul.nav{
   padding-right: 5%;
   margin-top: -60px;
   padding-top: 80px;
+  text-align: justify;
 }
 .works_title{
   text-align: center;
@@ -277,7 +281,8 @@ ul.nav{
 
 .works_image img{
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  margin:10px;
+  margin-left:10px;
+  margin-bottom: 0px;
 }
 
 
