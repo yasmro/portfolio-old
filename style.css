@@ -248,51 +248,50 @@ ul.nav{
 
 #attendanceMoreButton{
   position: absolute;
-  bottom: 5%;
-  left: 9%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  bottom: 4px;
+  right: 0%;
   z-index:1;
 }
 
+/*
 #attendanceMoreButton:hover{
   position: absolute;
-  bottom: 5%;
-  left: 9%;
+  bottom: 4px;
+  right: 0%;
   background-color: rgba(255,255,255,0.3);
-  box-shadow: 0 0px 0px rgba(0,0,0,0.0);
 }
+*/
 
 #japaneseMoreButton{
   position: absolute;
-  bottom: 3%;
-  left: 9%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  bottom: 4px;
+  right: 0%;
   z-index:1;
 }
 
+/*
 #japaneseMoreButton:hover{
   position: absolute;
-  bottom: 3%;
-  left: 9%;
+  bottom: 4px;
+  right: 0%;
   background-color: rgba(255,255,255,0.3);
-  box-shadow: 0 0px 0px rgba(0,0,0,0.0);
 }
+*/
 
 #barrierMoreButton{
   position: absolute;
-  bottom: 5%;
-  left: 9%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  bottom: 4px;
+  right: 0%;
   z-index:1;
 }
-
+/*
 #barrierMoreButton:hover{
   position: absolute;
-  bottom: 5%;
-  left: 9%;
-  box-shadow: 0 0px 0px rgba(0,0,0,0.0);
-  background-color: rgba(255,255,255,0.6);
+  bottom: 4px;
+  right: 0%;
+  background-color: rgba(255,255,255,0.3);
 }
+*/
 
 /**//**/
 
