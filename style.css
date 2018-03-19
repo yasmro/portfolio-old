@@ -35,7 +35,7 @@ header{
 
 #title{
   width: 30%;
-  padding: 10px 30px;
+  padding: 0px 30px;
   float: left;
   margin: 0px;
   color: white;
@@ -104,7 +104,7 @@ ul.nav{
 .main_contents{
   width: 100%;
   color: black;
-  padding-top: 59px;
+  padding-top: 0px;
   margin: 0px;
 }
 
@@ -133,8 +133,10 @@ ul.nav{
 
 
 /* about -64, 64 bc004a*/
+
 .about{
-  width:90%;
+  width:100%;
+  /*
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 0px;
@@ -142,6 +144,7 @@ ul.nav{
   padding-bottom: 90px;
   background-color: #B3B92D;
   color: #ffffff;
+  */
 }
 .about_photo{
   width: 25%;
@@ -192,28 +195,26 @@ ul.nav{
   width:100%;
   padding-left: 0%;
   padding-right: 0%;
-  margin-top: -60px;
-  padding-top: 80px;
   text-align: justify;
 
 }
 .works_title{
   text-align: center;
   font-size: 200%;
-  padding: 20px 0;
+  padding-top: 50px;
 }
 
 .works_list{
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   font-size: 120%;
   font-weight: bold;
 }
 
 
 .works_menuButton {
-  border:3px solid rgba(159,53,58,1);
-  background-color: rgba(159,53,58,1);
+  border:3px solid rgba(80,80,80,1);
+  background-color: rgba(80,80,80,1);
   padding:10px 10px;
   margin: 10px;
   font-size: 120%;
@@ -227,22 +228,25 @@ ul.nav{
 }
 
 .works_menuButton:hover {
-  border:3px solid rgba(159,53,58,1);
+  border:3px solid rgba(80,80,80,1);
   background-color: rgba(255,255,255,0);
-  color:  rgba(159,53,58,1);
+  color:  rgba(80,80,80,1);
   transition: 0.4s;
 }
 
 
 .works_contents2{
-  margin-top: -60px;
-  padding-top: 60px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   position: relative;
   z-index:0;
 }
 .works_contents2 a{
-  padding: 0px;
+  font-size: 120%;
+  color: brown;
+}
+
+.works_contents2 a:visited{
+  color: brown;
 }
 
 
@@ -426,8 +430,8 @@ footer{
   padding: 0px 0px;
   width: 100%;
   height: auto;
-  background-color: brown;
-  color: white;
+  background-color: #cccccc;
+  color: black;
 }
 .copyright{
   width:100%;

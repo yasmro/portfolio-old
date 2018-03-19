@@ -28,55 +28,36 @@
 <body>
 
     <!-- Header -->
+    <!--
     <header>
     	<div class="global_nav" id="navigation">
     		<h1 id = "title"><a href="#"> Yasmro's portfolio site</a></h1> 
     		<ul class="nav">
     			<li><a href="#">home</a></li>
     			<li><a href="#about">about</a></li>
-    			<!-- <li><a href="#">reason</a></li> -->
+ 
     			<li><a href="#works">works</a></li>
     		</ul>
     	</div>
     </header>
+	-->
 
     <!-- Top Message -->
     <div class = "main_contents">
-    	<img src="images/yasmro/top2.png" width="100%">
+    	<img src="images/yasmro/top.png" width="100%">
 	</div>
 
-
+	<!--
 	<div class = "about" id = "about" align="center">
-		<div class = "about_photo" align="center">
-			<img src="images/about_myself.jpg" width="80%">
-		</div>	
-		<div class = "about_description">
-			<div class = "about_title">
-				<h1>大野　優</h1>
-				<h2>Yu Ohno (a.k.a. Yasmro)</h2>
-				Contact: <a href="mailto:kantillo0683@gmail.com" class="contact">kantillo0683@gmail.com</a><br>
-			</div>
-			<div class = "about_introduction">
-				<p>
-					1996/12/26生まれ，AB型，奈良県出身<br>奈良高専システム創成工学専攻情報システムコース1年所属<br><br>
-					<!--
-					フォント好きがきっかけでデザインに興味を持つようになりました．最初は，見た目こそデザインの全てと思っていましたが，システム設計に関するワークショップでの挫折を通して，デザインは作るモノの見た目だけでなく，モノを作る上でのターゲットに対するニーズや背景といった問題も考えるべきだと認識するようになりました．それを機にデザインはモノづくりの上で全ての工程・人々に影響を与え，幸せにできる魔法であるという印象を抱くようになり，さらにデザインに対する魅力を抱くようになりました．<br>
-					趣味・特技は書道（10年目，過去20回以上コンクールで受賞経験あり）・音楽（Classic, Jazz, Orchestra, Baritone Sax経験あり）・海外旅行（写真はSingaporeのClarke Quay）・ほのぼのアニメを見ることです．<br><br>
-				-->
-				</p>
+		<img src="images/yasmro/about.png" width="100%">
 
-				<dl>      		
-                    <dt>デザインスキル：</dt>
-                        <dd>Photoshop, Illustrator, Typography, 配色理論, 画像加工</dd>
-                    <dt>コーディングスキル：</dt>
-                    	<dd>HTML, CSS, Javascript(主にjQuery), Java, C, C#, Android(Xamarin)など</dd>
-                </dl>
 
 			</div>
 
 		</div>
 		<div class="clear"><hr /></div>
 	</div>
+-->
 
 	<div class = "works" id = "works">
 		<div class = "works_title">
@@ -94,50 +75,64 @@
 		</div>
 
 
-		<div class = "works_contents2" id = "work_smartattendance">
+		<div class = "works_contents2" id = "work_smartattendance" style="text-align: center;">
 			<img src="images/yasmro/01.png" width="100%">
+			<div class="clear"><hr /></div>
+			<img src="images/yasmro/01_approach.png" width="80%">
+			<div class="clear"><hr /></div>
+			<a href="images/SAS_PF.pdf">最終報告会でのプレゼン資料はこちら（スライドのデザインも手がけてます）</a>
+			
 
-			<a href="images/SAS_PF.pdf"><img src="images/yasmro/01btn.png" id="attendanceMoreButton" width="11%" alt="aaa"></a>
 		</div>
-		<div class = "works_contents2" id = "work_japanese">
+		<div class = "works_contents2" id = "work_japanese" style="text-align: center;">
 			<img src="images/yasmro/02.png" width="100%">
-			<a href="learnJapanese2_0/index.html"><img src="images/yasmro/02btn.png" id="japaneseMoreButton" height="20%"></a>
+			<div class="clear"><hr /></div>
+			<img src="images/yasmro/02_approach.png" width="80%">
+			<div class="clear"><hr /></div>
+			<a href="learnJapanese2_0/index.html">コンテンツページはこちら</a>
+			
 
 		</div>
 
-		<div class = "works_contents2" id = "work_barrier">
+		<div class = "works_contents2" id = "work_barrier" style="text-align: center;">
 			<img src="images/yasmro/03.png" width="100%">
-			<a href="images/Barrier_PF.pdf"><img src="images/yasmro/03btn.png" id="barrierMoreButton" height="20%"></a>
+			<div class="clear"><hr /></div>
+			<img src="images/yasmro/03_approach.png" width="80%">
+			<div class="clear"><hr /></div>
+			<a href="images/Barrier_PF.pdf">最終報告会でのプレゼン資料はこちら（スライドのデザインも手がけてます）</a>
+			
 		</div>
 
 	
-		<div class = "works_contents2" id = "work_arts">
-			<img src="images/yasmro/04.png" width="100%">
+		<div class = "works_contents2">
+			<img src="images/yasmro/04.png" width="100%" id = "work_arts_title">
 
-			<div class = "works_others_photo">	
-				<img src="images/Typography3.png" width="100%" class = "slb">
-			</div>
+			<div id = "work_arts">
+				<div class = "works_others_photo">	
+					<img src="images/Typography3.png" width="100%" class = "slb">
+				</div>
 
-			<div class = "works_others_photo">	
-				<img src="images/Shodo2.png" width="100%" class = "slb">
-			</div>
-			<div class = "works_others_photo" >
-				<img src="images/BusinessCard.png" width="100%" class = "slb" style = "padding: 20% 0; background-color: #f0f0f0">
-			</div>
+				<div class = "works_others_photo">	
+					<img src="images/Shodo2.png" width="100%" class = "slb">
+				</div>
+				<div class = "works_others_photo" >
+					<img src="images/BusinessCard.png" width="100%" class = "slb" style = "padding: 20% 0; background-color: #f0f0f0">
+				</div>
 
-			<div class="clear"><hr /></div>
+				<div class="clear"><hr /></div>
 
-			<div class = "works_others_description">
-				<h2>学年のグループLINEアイコン</h2>
-				<p>今年から専攻科が改組になり，複数の学科が１つになりました．それにちなんで，４つのコース名を風車に見えるようにつなげ，専攻科全員がひとつになって生き生きと活躍できるようにという願いを込め，風車が動くかのようなデザインにしました．</p>
-			</div>
-			<div class = "works_others_description">
-				<h2>書道デザイン「水無月」</h2>
-				<p>日本の風物詩の一つである，６月の「梅雨」のイメージを外国人に伝えたいために「紫陽花の中の降雨」をテーマにデザインしました．</p>
-			</div>
-			<div class = "works_others_description">
-				<h2>名刺</h2>
-				<p>「自分らしさ」をたくさんの人に伝えるために，自分を構成するものの一つである「書道」をテーマに作成しました．背景色を墨色に設定したり，氏名を実際に筆で書きました．</p>
+				<div class = "works_others_description">
+					<h2>学年のグループLINEアイコン</h2>
+					<p>今年から専攻科が改組になり，複数の学科が１つになりました．それにちなんで，４つのコース名を風車に見えるようにつなげ，専攻科全員がひとつになって生き生きと活躍できるようにという願いを込め，風車が動くかのようなデザインにしました．</p>
+				</div>
+				<div class = "works_others_description">
+					<h2>書道デザイン「水無月」</h2>
+					<p>日本の風物詩の一つである，６月の「梅雨」のイメージを外国人に伝えたいために「紫陽花の中の降雨」をテーマにデザインしました．</p>
+				</div>
+				<div class = "works_others_description">
+					<h2>名刺</h2>
+					<p>「自分らしさ」をたくさんの人に伝えるために，自分を構成するものの一つである「書道」をテーマに作成しました．背景色を墨色に設定したり，氏名を実際に筆で書きました．</p>
+				</div>
 			</div>
 
 			<div class="clear"><hr /></div>
