@@ -440,6 +440,23 @@ footer{
   text-align: center;
 }
 
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 2px solid rgb(188,188,188);
+}
+
+#pageTop img{
+  box-shadow: 2px solid rgb(188,188,188);
+}
+
+#pageTop:hover {
+  text-decoration: none;
+  opacity: 0.7;
+
+}
+
 /* Other */
 /*
 ::-webkit-scrollbar {
