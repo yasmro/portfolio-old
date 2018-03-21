@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 20px auto;
+    width: 800px;
+    font-family: "Arial";
+	font-size: 110%;
+	background-image: url(images/BG.png);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	background-color: #d9cd90;
+}
+
+/* Header */
+
+Header{
+	padding: 0px;
+	//background-color: red;
+	text-align: center;
+}
+
+/* Contents */
+
+h1{
+	color:#ffffff;
+}
+
+
+
+div .contentsHeader{
+	padding: 25px 0px 0px 0px;
+}
+
+form{
+	padding: 0px 10px;
+}
+
+
+
+div #myQuestion{
+	font-size:200%;
+	text-align: center;
+}
+
+div {
+	padding: 0px 0px 10px 0px;
+	background-color: #FCFBF5;
+}
+
+
+div > p{
+	padding: 0px 10px;
+}
+
+h2{
+    color: #43341b;
+    padding: 5px 20px;
+    font-style: italic;
+	text-align: center;
+}
+/*
+h3{
+	background-color: #43341B;
+	color: white;
+    padding: 0px 5px;
+    font-weight: bold;
+}*/
+
+dt{
+    color:#43341b;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#update-title{
+	width: 400px;
+	font-size: 120%
+}
+
+#update{
+	box-shadow: 1.5px 1.5px 1.5px rgba(0,0,0,0.4);
+	border: 1px solid #43341b;
+	font-size: 80%;
+}
+
+table{
+	margin: 20px 0px;
+}
+
+h3{
+    position: relative;
+    color: #111;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 0 0.5em;
+    padding: 0.5em 0.5em 0.5em 1.7em;
+    border-bottom: 3px solid rgba(159,53,58,1);
+}
+ 
+h3:before{
+    content: "";
+    position: absolute;
+    background: rgba( 159, 53, 58, 0.8 );
+    top: 0;
+    left: 0.4em;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+ 
+h3:after{
+    content: "";
+    position: absolute;
+    background: rgba( 159, 53, 58, 0.4 );
+    top: 1.0em;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+}
+
+/* Footer */
+Footer{
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	transition: 0.4s;
+}
+
+Footer img:hover {
+	
+	opacity: 0.7;
+	transition: 0.4s;
+	
+}
+
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 90%;
+}
+#page-top a {
+    background-image: url(images/BG2.png);
+	opacity: 1;
+	font-family: "Candara";
+    text-decoration: none;
+    color: #fff;
+    width: 50px;
+    padding: 0px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+	
+}
+#page-top a:hover {
+    text-decoration: none;
+	opacity: 0.5;
+}
+
+/*
+#model{
+	float:left;
+	text-align:center;
+	width: 350px;
+	height:550px;
+	margin-bottom: 5px;
+}
+
+#tracecanvas{
+	float:right;
+	text-align:center;
+	width: 450px;
+	height:550px;
+	margin-bottom: 5px;
+}
+*/
+
+/* Other */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  box-shadow: inset 0 0 5px rgba(159,53,58, .1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 50, .5);
+  border-radius: 0px;
+  box-shadow:0 0 0 1px rgba(159,53,58, .3);
+}
