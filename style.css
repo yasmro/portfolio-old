@@ -25,21 +25,21 @@ body{
 
 .works{
   width:100%;
-  padding-left: 0%;
-  padding-right: 0%;
+  padding: 80px 0;
   text-align: justify;
 }
 
 
 .works_title{
   text-align: center;
+  padding-bottom: 30px;
   font-size: 200%;
-  padding-top: 50px;
+
 }
 
 .works_list{
   text-align: center;
-  padding-bottom: 50px;
+
   font-size: 120%;
   font-weight: bold;
 }
