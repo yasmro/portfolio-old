@@ -1,0 +1,182 @@
+/* common */
+a {
+  color: #343a40;
+}
+
+a:hover, a:focus, a:active {
+  color: #343a40;
+  text-decoration: underline;
+}
+
+.p-lg-5{
+    padding: 4rem !important;
+}
+
+
+/* Loading */
+#loadingBg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    min-width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    background: #ffffff;
+    opacity: 1;
+    z-index: 999;
+}
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 50px 20px;
+    margin: -70px 0 0 -220px;
+    background: #ffffff;
+    z-index: 1000;
+}
+#loading #percent {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Side bar */
+.bg-primary{
+    background-color: lightgray!important;
+}
+
+a.nav-link{
+    font-family: ff-dax-pro, serif;
+    font-weight: 300;
+    font-variant: small-caps;
+	color: #212121!important;
+    letter-spacing: 4px;
+    
+}
+
+/* Main menu */
+.jumbotron-fluid {
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
+}
+
+#top{
+    background-size: cover;
+    background-image: url('../img/test.jpg');
+    background: rgba(52, 58, 64, 0.9);
+
+}
+
+#topTitle, #topSubTitle{
+    color: white;
+}
+
+h1{
+    font-family: rollerscript-rough, trajan-pro-3, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h2{
+    font-family: ff-dax-compact-pro, din-condensed, din-2014-narrow, futura-pt-condensed, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    letter-spacing: 8px;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+h3, h5{
+    font-family: ff-dax-pro, a-otf-ud-shin-go-pr6n, din-condensed, din-2014, futura-pt, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-weight: 300;
+
+}
+
+h4, span{
+    font-family: ff-dax-compact-pro, din-condensed, din-2014-narrow, futura-pt-condensed, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;   
+}
+
+p, span, ol, a.link {
+    font-family: ff-dax-pro, din-2014, futura-pt, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;   
+    text-align:justify;
+}
+
+div.resume-date{
+    margin-bottom: 8px;
+}
+
+span.resume-date{
+    color: whitesmoke;
+    background-color: black;
+    padding: 2px 15px;
+}
+
+img, .bwWrapper {
+    -webkit- filter: grayscale(100%);  /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+img:hover, .bwWrapper:hover{
+    -webkit- filter: grayscale(0%);  /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: 0.3s;
+}
+
+/* Works */
+.contents-works{
+	margin-bottom: 50px;
+}
+
+.caption{
+    margin-top: 5px;
+}
+
+.caption h4{
+    font-size: 120%;
+}
+
+/* contacts */
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #343a40;
+  color: #fff !important;
+  border-radius: 100%;
+  border: 3px solid #343a40;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.15rem;
+  margin-right: 2rem;
+  transition: 0.3s;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover > .fab, .social-icons a:hover > .far{
+    color: #343a40;
+
+}
+
+/* footer */
+
+.footer-copyright{
+    font-family: ff-dax-pro, serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
