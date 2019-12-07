@@ -1,3 +1,8 @@
+.pace-running .wrap {
+  display: none;
+}
+
+
 a {
   color: #343a40;
 }
@@ -74,14 +79,16 @@ a.nav-link{
 }
 
 h1{
-    font-family: adobe-handwriting-ernie, rollerscript-rough, trajan-pro-3, sans-serif;
+    font-family: rollerscript-smooth, adobe-handwriting-ernie, bodoni-urw, rollerscript-rough, trajan-pro-3, sans-serif;
+    /*font-variant: small-caps;
+    letter-spacing: 15px;*/
     font-weight: 300;
     font-style: normal;
 }
 
 h2{
-    font-family: ff-dax-compact-pro, din-condensed, din-2014-narrow, futura-pt-condensed, linotype-didot, adobe-garamond-pro, sans-serif;
-    font-weight: 400;
+    font-family: ff-dax-compact-pro, neue-haas-grotesk-display, din-condensed, din-2014-narrow, futura-pt-condensed, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-weight: 300;
     font-style: normal;  
     letter-spacing: 8px;
     font-variant: small-caps;
@@ -90,7 +97,7 @@ h2{
 
 h3, h5{
     font-family: ff-dax-pro, a-otf-ud-shin-go-pr6n, din-condensed, din-2014, futura-pt, linotype-didot, adobe-garamond-pro, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 
 }
 
