@@ -2,6 +2,15 @@
   display: none;
 }
 
+.enmel{
+  display: none;
+}
+
+.pace .pace-progress:after {
+  font-family: 'Helvetica Neue', 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
 
 a {
   color: #343a40;

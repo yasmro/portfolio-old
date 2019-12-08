@@ -11,6 +11,8 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-big-counter.min.css" crossorigin="anonymous">
 
+
+
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="./css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/simplebox.min.css">
@@ -326,7 +328,7 @@
             <div class = "contents-works">
               <h2>Web Service / Mobile App</h2>
               <div class="row">
-                <div class = "contents-works col-lg-6 col-md-6 col-sm-12">
+                <div class = "contents-works col-lg-6 col-md-6 col-sm-12 enmel">
                   <div class="thumbnail">
                     <img src="./img/UnderPreparation.jpeg" alt="test" style="width:100%" data-toggle="modal" data-target="#img_enmel" class = "bwWrapper">
                     <div class="caption" id = "enmel_caption">
@@ -349,7 +351,7 @@
 
             <!-- Modals -->
             <div class="modal fade" id="img_enmel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-dialog modal-dialog-centered enmel" role="document">
                 <div class="modal-content">
 
                   <!--Body-->
@@ -616,7 +618,7 @@
               <h3>Post support in subscription business with Indian (Global-HQ) team</h3>
             </div>
 
-            <div class = "contents-works">
+            <div class = "contents-works enmel">
               <div class="resume-date">
                   <span class="resume-date">April 2018 – May 2019</span>
               </div> 
@@ -698,8 +700,18 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+
+    <script>
+      Pace.on('done', function(){
+        $('.wrap').css({'display':'inherit','transition':'0.3s'});
+      });
+    </script>
 
     <script src="./js/simplebox.min.js"></script>
     <!--script src="./js/loading.js"></script-->
@@ -751,14 +763,9 @@
         displayIndent: "2em"
       });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    
 
-    <script>
-      Page.on('done', function(){
-            $('.wrap').fadeIn();
-      });
 
-    </script>
 
     <script>
       var w = 0;
