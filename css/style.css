@@ -3,7 +3,7 @@
 }
 
 .enmel{
-  display: none;
+  /*display: none;*/
 }
 
 .pace .pace-progress:after {
@@ -116,7 +116,7 @@ h4, span{
     font-style: normal;   
 }
 
-p, span, ol, a.link {
+p, span, ol, a.link, button {
     font-family: ff-dax-pro, din-2014, futura-pt, linotype-didot, adobe-garamond-pro, sans-serif;
     font-weight: 300;
     font-style: normal;   
@@ -173,7 +173,7 @@ span.resume-date{
   text-align: center;
   font-size: 1.5rem;
   line-height: 3.15rem;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   transition: 0.3s;
 }
 
