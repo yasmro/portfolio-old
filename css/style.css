@@ -146,11 +146,26 @@ span.resume-date{
       filter: grayscale(0%);
       transition: 0.3s;
   }
+
 }
 
 /* Works */
 .contents-works{
 	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  .contents-works{
+    margin-bottom: 25px;
+  }
+
+  h2{
+      font-size: 1.75rem;
+  }
+
+  h3{
+      font-size: 1.3125rem;
+  }
 }
 
 .caption{
