@@ -25,36 +25,6 @@ a:hover, a:focus, a:active {
     padding: 4rem !important;
 }
 
-
-/* Loading */
-#loadingBg {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    min-width: 100%;
-    height: 100vh;
-    min-height: 100%;
-    background: #ffffff;
-    opacity: 1;
-    z-index: 999;
-}
-#loading {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 50px 20px;
-    margin: -70px 0 0 -220px;
-    background: #ffffff;
-    z-index: 1000;
-}
-#loading #percent {
-    margin-bottom: 5px;
-    text-align: center;
-    font-size: 16px;
-}
-
 /* Side bar */
 .bg-primary{
     background-color: lightgray!important;
@@ -88,7 +58,7 @@ a.nav-link{
 }
 
 h1{
-    font-family: rollerscript-smooth, adobe-handwriting-ernie, bodoni-urw, rollerscript-rough, trajan-pro-3, sans-serif;
+    font-family: adobe-handwriting-frank, sans-serif;
     /*font-variant: small-caps;
     letter-spacing: 15px;*/
     font-weight: 300;
@@ -96,7 +66,7 @@ h1{
 }
 
 h2{
-    font-family: ff-dax-compact-pro, neue-haas-grotesk-display, din-condensed, din-2014-narrow, futura-pt-condensed, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-family: ff-dax-compact-pro, sans-serif;
     font-weight: 300;
     font-style: normal;  
     letter-spacing: 8px;
@@ -105,19 +75,19 @@ h2{
 }
 
 h3, h5{
-    font-family: ff-dax-pro, a-otf-ud-shin-go-pr6n, din-condensed, din-2014, futura-pt, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-family: ff-dax-pro, a-otf-ud-shin-go-pr6n, sans-serif;
     font-weight: 400;
 
 }
 
 h4, span{
-    font-family: ff-dax-compact-pro, din-condensed, din-2014-narrow, futura-pt-condensed, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-family: ff-dax-compact-pro, sans-serif;
     font-weight: 300;
     font-style: normal;   
 }
 
 p, span, ol, a.link, button {
-    font-family: ff-dax-pro, din-2014, futura-pt, linotype-didot, adobe-garamond-pro, sans-serif;
+    font-family: ff-dax-pro, sans-serif;
     font-weight: 300;
     font-style: normal;   
     text-align:justify;
